@@ -1,0 +1,19 @@
+{
+  "name": "statix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "statix.js",
+  "scripts": {
+    "start": "node statix.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "front-matter": "^3.0.1",
+    "marked": "^0.5.2",
+    "pug": "^2.0.3",
+    "touch": "^3.1.0"
+  }
+}
