@@ -6,7 +6,7 @@ const path = require("path");
 
 function main() {
   const post_files = fs.readdirSync(`${__dirname}/src/posts`);
-  const template = fs.readFileSync("./src/pages_template.pug", "utf8");
+  const template = fs.readFileSync("./src/posts_template.pug", "utf8");
 
   // build MD files
   // this is where the post are made in html pages
@@ -23,7 +23,6 @@ function main() {
   // build HTML files
   // pages are pug files that need to be compiled
   const page_files = fs.readdirSync(`${__dirname}/src/pages`);
-  console.log(page_files);
   for (file of page_files) {
     if (!file.endsWith(".pug")) continue;
     let data = fs.readFileSync(`./src/pages/${file}`, "utf8");
